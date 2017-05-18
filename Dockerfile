@@ -1,7 +1,4 @@
-FROM java:8u111-jdk-alpine
+FROM php:5-apache
 MAINTAINER Tongcup <tongcup@gmail.com>
 
-COPY . /
-
-#EXPOSE 8888
-ENTRYPOINT ["java","-version"]
+COPY . /var/www/html
